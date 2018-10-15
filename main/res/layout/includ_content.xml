@@ -1,0 +1,51 @@
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="@layout/activity_details">
+    <TextView
+        android:id="@+id/title"
+        android:layout_above="@id/person"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="4 person" />
+
+    <TextView
+        android:id="@+id/person"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="4 person" />
+
+    <TextView
+        android:id="@+id/dur"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/person"
+        android:layout_margin="16dp"
+        android:text="45 min" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dur"
+        android:id="@+id/desc"
+        android:layout_margin="16dp"
+        android:text="@string/large_text" />
+    <TextView
+        android:id="@+id/title_ingr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_below="@id/desc"
+        android:text="INGREDIENTS" />
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/list_ingr"
+        android:layout_below="@+id/title_ingr"
+        android:layout_margin="16dp"
+        />
+
+
+</RelativeLayout>
